@@ -1,6 +1,41 @@
 
-<script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-<div id="app">
-    {{message}}
+
+
+<div class ="jumbotron" >
+  <div class = "center-block" id = "app">
+    <h1 >
+    steam土豪计算器
+    </h1>
+
+
+  
+  <div class="input-group" >
+
+    <input type="text" class="form-control" placeholder="Enter your Steam ID" aria-describedby="basic-addon1" v-model = "userid" >
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button"  v-on:click="reverseMessage">Go!</button>
+    </span>
+
+  </div>
+  <div class = "col-md-4">
+   <p>
+    {{userid}}
+  </p>
+  <p>
+    {{steam_id_url}}
+  </p>
+  <p>
+    {{steam_id}}
+  </p>
+  </div>
+  </div>
 </div>
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/vue/latest/vue.js"></script>
+<script src="hw.js"></script>
